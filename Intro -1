@@ -1,0 +1,11 @@
+int main() {
+   
+   int num=5;
+   int *ptr=&num;
+   
+   cout<<" before increment "<<*ptr<<endl; // value is 5
+   (*ptr)++;
+   cout<<" after increment "<<*ptr<<endl; // value is 6 
+
+    return 0;
+}
