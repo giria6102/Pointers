@@ -1,0 +1,11 @@
+int main() {
+   
+   int num=5;
+   int *ptr=&num;
+   
+  int * q=ptr;
+   
+     cout<<ptr<<"--->"<<q<<endl;   //  0x7ffe3bb0e72c--->0x7ffe3bb0e72c
+     cout<<(*ptr)<<"--->"<<(*q)<<endl;    //  5--->5
+    return 0;
+}
