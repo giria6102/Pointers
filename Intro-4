@@ -1,0 +1,19 @@
+int main() {
+    int temp[10]={1,2,3,4,5,6};
+    
+    
+    cout<<temp<<endl;  // 0x7ffe6db1c4b0
+    cout<<&temp<<endl;  // 0x7ffe6db1c4b0
+    cout<<temp[0]<<endl;  // 1
+    cout<<&temp[0]<<endl; // 0x7ffe6db1c4b0
+    
+    int *ptr =&temp[0];
+    
+    cout<<ptr<<endl;  //  0x7ffe6db1c4b0
+    cout<<*ptr<<endl;  //  1
+    cout<<&ptr<<endl;   //  0x7ffe6db1c4a8
+    
+    
+    
+    return 0;
+}
