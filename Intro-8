@@ -1,0 +1,23 @@
+
+int getsum(int *arr,int n){
+    
+    cout<<sizeof(arr)<<endl;  // 8      size is 8 because only single array of element is passed in the function as pointer and size of pointer is 8
+    
+    
+    int sum=0;
+    for(int i=0;i<n;i++){
+        sum=sum+arr[i];
+    }
+    return sum;
+}
+
+int main() {
+    
+   int arr[]={1,2,3,4,5,6};
+   
+    cout<<sizeof(arr)<<endl;  // 24 = (4*6)
+   
+   cout<<getsum(arr,6);  // 21
+
+    return 0;
+}
