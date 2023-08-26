@@ -1,0 +1,19 @@
+void update(int *ptr){
+    
+   
+    ptr=ptr+1; // value is not udated 
+}
+
+int main() {
+    
+    int value=5;
+    
+    int *ptr=&value;
+    cout<<" Before "<<ptr<<endl;  // 0x7ffe53a81f94
+    update(ptr);
+    cout<<" After"<<ptr<<endl;   // 0x7ffe53a81f94
+    
+   
+
+    return 0;
+}
