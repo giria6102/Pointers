@@ -1,0 +1,17 @@
+int main() {
+    int i=5;
+    
+    int *ptr=&i;
+    int **ptr2=&ptr;
+    
+    
+    cout<<ptr<<endl;    //  addres  s value is 710
+    cout<<&ptr<<endl;   //address  value is 820
+    cout<<ptr2<<endl;   // addres s v alue  is 820
+    cout<<*ptr2<<endl;  //  address v   alue is 710
+
+     cout<<i<<endl;      5
+    cout<<*ptr<<endl;    5
+    cout<<**ptr2<<endl;  5  
+    return 0;
+} 
