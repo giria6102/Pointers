@@ -1,0 +1,29 @@
+void update(int **ptr2){
+     
+      ptr=ptr+1; // No change in value
+      
+     *ptr2=*ptr2+1;  // change on the value of ptr  i.e 710 becomes 714
+     
+     **ptr2=**ptr2+1;  // change in the value of i i.e 5  becomes 6
+     
+     
+ }
+
+int main() {
+    int i=5;
+    
+    int *ptr=&i;
+    int **ptr2=&ptr;
+    
+    
+
+      update(ptr2);
+
+     cout<<i<<endl;      6
+    cout<<ptr<<endl;    710
+    cout<<ptr2<<endl;  820
+
+    
+
+    return 0;
+} 
