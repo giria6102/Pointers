@@ -1,0 +1,24 @@
+void update1(int n){               // Pass by value ,since copy is created with new memory to this function
+    n++;
+}
+
+void update2(int&n){             // Pass by refrence ,same memory is allocated to this fucntion to made changes
+    n++;
+}
+
+int main() {
+    int n=5;
+   
+   
+    cout<<n<<endl;  5
+    update1(n);
+    
+     cout<<n<<endl;  5
+
+     update2(n);
+
+     cout<<n<<endl;  6
+    
+
+    return 0;
+}
